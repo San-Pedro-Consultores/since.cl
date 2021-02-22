@@ -1,7 +1,5 @@
 # since.cl
 
-#rama webpack es el compilador para css,js y imagenes 
-
 #Carpeta content/themes/static estrutura de js,css,imagenes ocupando webpack
 #Carpeta content/themes/templates estrutura de html formato smarty o .tpl https://www.smarty.net se puede separa en modulos y reutilizar
 #Carpeta content/themes/tempaltes_compiled compilado de los archivos de smarty crean una cache

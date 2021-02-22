@@ -32,6 +32,7 @@
     var __ = [];
     __['Cargando'] = "{__('Cargando')}";
     __['Error'] = "{__('Error')}";
+    __['¡Hay algo que salió mal!'] = "{__('¡Hay algo que salió mal!')}";
     </script>
     
     {/strip}
