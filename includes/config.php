@@ -42,6 +42,6 @@ define('system_keywords', 'demo, demo, demo');
  * in their development environments.
  */
 define('DEBUGGING', true);
-define('COMPILADO', true);
+define('COMPILADO', false);
 
 ?>
