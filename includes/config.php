@@ -23,7 +23,7 @@ define('DB_HOST', 'localhost');
 define('DB_PORT', '3306');
 
 // ** System URL ** //
-define('SYS_URL', 'http://localhost/since.cl/public'); // e.g (http://www.tsubit.com)
+define('SYS_URL', 'https://since-cl.herokuapp.com'); // e.g (http://www.tsubit.com)
 
 // ** i18n settings ** //
 define('DEFAULT_LOCALE', 'en_en');
