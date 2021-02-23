@@ -465,6 +465,26 @@ function modal() {
 
 
 /**
+ * get_hash_token
+ * 
+ * @return string
+ */
+function get_hash_token() {
+    return md5(get_hash_number());
+}
+
+
+/**
+ * get_hash_number
+ * 
+ * @return string
+ */
+function get_hash_number() {
+    return time()*rand(1, 99999);
+}
+
+
+/**
  * page_header
  * 
  * @param string $title
