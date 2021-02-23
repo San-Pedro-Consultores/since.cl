@@ -8,6 +8,14 @@
 
 class User {
 
-    
+    /**
+     * __construct
+     * 
+     * @return void
+     */
+    public function __construct() {
+        global $db, $system;
+        
+    }
 
 }

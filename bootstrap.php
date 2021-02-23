@@ -100,3 +100,5 @@ try {
 $smarty->assign('secret', $_SESSION['secret']);
 $smarty->assign('system', $system);
 $smarty->assign('date', $date);
+
+?>
