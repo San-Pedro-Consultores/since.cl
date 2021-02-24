@@ -8,16 +8,16 @@
 
 // ** MySQL settings ** //
 /** The name of the database */
-define('DB_NAME', 'tsubit');
+define('DB_NAME', 'escuela_simce');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'escuela_empleo');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', '4JATTp7IECyl');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '3.129.196.144');
 
 /** MySQL port */
 define('DB_PORT', '3306');
