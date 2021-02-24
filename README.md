@@ -1,5 +1,7 @@
 # since.cl
 
+#compilador css,imagenes,js se compilan con webpack 
+
 #Carpeta content/themes/static estrutura de js,css,imagenes ocupando webpack
 #Carpeta content/themes/templates estrutura de html formato smarty o .tpl https://www.smarty.net se puede separa en modulos y reutilizar
 #Carpeta content/themes/tempaltes_compiled compilado de los archivos de smarty crean una cache
