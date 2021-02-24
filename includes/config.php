@@ -30,7 +30,7 @@ define('DEFAULT_LOCALE', 'en_en');
 
 // ** config system ** //
 define('system_description', 'descripción web');
-define('system_title', 'since');
+define('system_title', 'simce');
 define('system_version', '1.0.0');
 define('system_keywords', 'demo, demo, demo');
 
