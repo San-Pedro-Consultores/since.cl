@@ -35,6 +35,9 @@
     __['¡Hay algo que salió mal!'] = "{__('¡Hay algo que salió mal!')}";
     </script>
     
+    <link rel="stylesheet" href="{$system['compilado']}tsubit.min.css?v={$system['system_version']}">
+
     {/strip}
 
 </head>
+<div id="tsubit" class="containMain">

@@ -1,0 +1,195 @@
+/* ------- Elementos del Header -------*/
+
+.logo1{
+    background-image: url('../../assets/img/logo-agencia-educacion.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-right: 20px;
+    width: 146px;
+    height: 101px;
+    display: inline-block;
+    cursor: pointer;  
+}
+
+.logo2{
+    background-image: url('../../assets/img/logo-simce-resultados.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-right: 20px;
+    width: 170px;
+    height: 69px;
+    display: inline-block;
+    cursor: pointer;  
+    margin-top: 35px;
+}
+
+.label-home{
+	background: #1b3762;
+	color: #ffffff;
+	padding: 10px 15px 10px 15px;
+	font-size: 12px;
+}
+
+.top{
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.blockSearch{
+    height: 30px;
+    width: 60%;
+}
+
+.blockSearch input[type="text"]{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #555;
+    height: 32px;
+    width: 205px;
+	position: absolute;
+	background: transparent;
+	outline: none;
+}
+
+.image-search {
+	width: 20px;
+	border: 0px;
+	float: right;
+	top:1px;
+}
+
+.menu{
+	border-top: solid 5px #006ab3;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 0;
+}
+
+.menubg {
+	
+}
+
+.icon-menu{
+	background: none;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.icon1{
+	background-image: url('../../assets/img/icon1.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    margin-right: 20px;
+    width: 145px;
+    height: 145px;
+    display: inline-block;
+    cursor: pointer; 	
+}
+
+.icon1:hover{
+    background-image: url('../../assets/img/icon1-hover.png');	
+}
+
+.icon2{
+    background-image: url('../../assets/img/icon2.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    margin-right: 20px;
+    width: 146px;
+    height: 145px;
+    display: inline-block;
+    cursor: pointer; 
+}
+
+.icon2:hover{
+    background-image: url('../../assets/img/icon2-hover.png');	
+}
+
+.icon3{
+    background-image: url('../../assets/img/icon3.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    margin-right: 20px;
+    width: 146px;
+    height: 145px;
+    display: inline-block;
+    cursor: pointer; 
+}
+
+.icon3:hover{
+    background-image: url('../../assets/img/icon3-hover.png');	
+}
+
+.icon4{
+    background-image: url('../../assets/img/icon4.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    margin-right: 20px;
+    width: 146px;
+    height: 145px;
+    display: inline-block;
+    cursor: pointer; 
+}
+
+.icon4:hover{
+    background-image: url('../../assets/img/icon4-hover.png');	
+}
+
+.icon5{
+    background-image: url('../../assets/img/icon5.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    margin-right: 20px;
+    width: 146px;
+    height: 145px;
+    display: inline-block;
+    cursor: pointer; 
+}
+
+.icon5:hover{
+    background-image: url('../../assets/img/icon5-hover.png');	
+}
+
+.icon6{
+    //background-image: url('../../assets/img/icon6.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    margin-right: 20px;
+    width: 146px;
+    height: 145px;
+    display: inline-block;
+    cursor: pointer; 
+}
+
+.icon6:hover{
+    //background-image: url('../../assets/img/icon6-hover.png');	
+}
+
+.icon-profile{
+    background-image: url('../../assets/img/icon7.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    margin-right: 20px;
+    width: 146px;
+    height: 145px;
+    display: inline-block;
+    cursor: pointer; 
+}
+
+.usertype{
+	border-top: solid 3px #f2f2f2;
+	padding-top: 20px;
+	margin-top: 10px;
+}

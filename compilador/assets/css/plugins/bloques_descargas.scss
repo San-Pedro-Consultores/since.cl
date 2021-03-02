@@ -1,0 +1,29 @@
+/*Bloque Descargas*/
+
+.downloads{
+	background: #006ab3;
+	color: #ffffff;
+}
+
+.downloads .line{
+	border: solid 2px #ffffff;
+	padding: 40px;
+}
+
+.downloads a{
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.icondownload{
+    background-image: url('../../assets/img/download.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    margin-left: 15px;
+    width: 34px;
+    height: 37px;
+    display: inline-block;
+    cursor: pointer;
+}

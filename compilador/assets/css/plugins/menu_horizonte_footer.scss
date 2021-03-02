@@ -1,0 +1,18 @@
+/*menu horizontal Footer*/
+
+#navigation ul{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+#navigation ul li{
+    list-style: none;
+    display: inline;
+}
+
+#navigation li:not(:first-child):before {
+    content: " | ";
+    padding-right: 10px;
+    padding-left: 10px;
+}

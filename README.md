@@ -1,5 +1,7 @@
 # since.cl
 
+#vuejs carpeta script_vuejs en donde se crear los tpl con el codigo de vuejs despues estos se vincula con los tpl de carpeta templates
+
 #compilador css,imagenes,js se compilan con webpack 
 
 #Carpeta content/themes/static estrutura de js,css,imagenes ocupando webpack

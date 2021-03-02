@@ -19,7 +19,7 @@
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
     "blazy": "^1.8.2",
-    "bootstrap": "^5.0.0-beta1",
+    "bootstrap": "^4.6.0",
     "codemirror": "^5.58.3",
     "css-loader": "^4.2.2",
     "file-loader": "^6.0.0",
