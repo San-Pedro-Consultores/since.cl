@@ -65,7 +65,7 @@ var vm = new Vue({
             {nombre : 'dl_rbd': 5},
             {nombre : 'tiene_informe_visita_2020', dato : 'NO'}
         ],
-        sostenedores: [ // Corresponde a jsonInfoHisSos
+        sostenedores: [ // Corresponde a historialSostenedores 
             {nombre : 'Media_2017_Sostenedor', dato : 70938800},
             {nombre : 'Basica_2017_Sostenedor', dato : 70938800},
             {nombre : 'SOSTENEDORES_IIM_2016', dato : 70938800},
