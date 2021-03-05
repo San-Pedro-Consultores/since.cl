@@ -485,6 +485,121 @@ function get_hash_number() {
 
 
 /**
+ * dl_file_resumable
+ * 
+ * @param string $file
+ * @return string
+ */
+function dl_file_resumable($file, $is_resume=FALSE) {   
+    $error=0;
+    if (!is_file($file)){
+        $error=1;
+    } else {
+        //Gather relevent info about file
+        //$size = filesize($file);
+        $fileinfo = pathinfo($file);
+
+    	//workaround for IE filename bug with multiple periods / multiple dots in filename
+    	//that adds square brackets to filename - eg. setup.abc.exe becomes setup[1].abc.exe
+        $filename = $fileinfo['basename'];
+
+    	//$file_extension = strtolower($path_info['extension']);
+    	$file_extension = strtolower(substr(strrchr($filename, '.'), 1));
+
+    	//echo "[".$file_extension."]";
+    	//This will set the Content-Type to the appropriate setting for the file
+        switch($file_extension) {
+            case 'xls': $ctype='application/vnd.ms-excel'; break;
+            case 'xlsx': $ctype='application/vnd.ms-excel'; break;
+    		case 'pps': $ctype='application/vnd.ms-powerpoint'; break;
+    		case 'ppt': $ctype='application/vnd.ms-powerpoint'; break;
+            //case 'pptx': $ctype='application/vnd.ms-powerpoint'; break;
+			case 'pptx': $ctype='application/pptx'; break;
+    		case 'rtf': $ctype='application/rtf'; break;
+    		case 'pdf': $ctype='application/pdf'; break;
+    		case 'mdb': $ctype='application/x-msaccess'; break;
+
+    		case 'doc':  $ctype='application/msword'; break;
+    		case 'docx':  $ctype='application/msword'; break;
+    		case 'htm':  $ctype='text/html'; break;
+    		case 'html': $ctype='text/html'; break;
+    		case 'jpe':  $ctype='image/jpeg'; break;
+    		case 'jpeg': $ctype='image/jpeg'; break;
+    		case 'jpg':  $ctype='image/jpeg'; break;
+    		case 'gif':  $ctype='image/gif'; break;
+    		case 'png':  $ctype='image/png'; break;
+    		
+    		case 'dwg':  $ctype='application/dwg'; break;
+    		
+    		case 'tif':  $ctype='image/tiff'; break;
+    		case 'tiff': $ctype='image/tiff'; break;
+
+    		case 'exe': $ctype='application/octet-stream'; break;
+    		case 'zip': $ctype='application/zip'; break;
+    		case 'mp3': $ctype='audio/mpeg'; break;
+    		case 'mpg': $ctype='video/mpeg'; break;
+    		case 'avi': $ctype='video/x-msvideo'; break;
+    		default:    $ctype='application/force-download';
+    	}
+        
+        $largo=@filesize($file);
+    	//open the file
+    	if ( $fp = @fopen($file, 'rb') ) {
+            //set_time_limit(0);
+            if (strstr($_SERVER['HTTP_USER_AGENT'], 'MSIE')){
+                header("Content-Type: application/octet-stream");
+    			header('Content-Description: File Transfer');
+    		} else {
+                header("Content-Type: " . $ctype );
+                //if ( $largo && $largo>0)
+                //    header("Content-Length: ".$largo);            
+            }
+    		
+    		//header("Last-Modified: $time");
+    		if ( $file_extension!="html"){
+				header("Ruta-Real: ".$file);
+				header("Content-Length: ".$largo);
+    			header("Content-Disposition: attachment; filename=" . $filename . "");
+    			header("Content-Transfer-Encoding: binary");
+    			header("Connection: keep-alive");
+    			header("Pragma: public");
+    			header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+    		}
+
+            while(!@feof($fp)){
+                //reset time limit for big files
+                @set_time_limit(0);
+                @print(fread($fp, 1024*8));
+                @flush();
+                @ob_flush();
+            }
+            
+            @fclose($fp);               
+        } else {
+            $error=2;
+        }	
+    }
+    return $error;
+}
+
+
+/**
+ * page_header
+ * 
+ * @param string $archivoS3
+ * @param string $archivoLocal
+ * @return void
+ */
+function s3_get($archivoS3, $archivoLocal){
+    $s3 = new S3(ID_CLAVE, CLAVE);
+    $bucket = BUCKET;
+    $raizS3 = RAIZ_S3;
+    $respuesta = $s3->getObject($bucket, $raizS3.$archivoS3, $archivoLocal );
+    return $respuesta;
+}
+
+
+/**
  * page_header
  * 
  * @param string $title
