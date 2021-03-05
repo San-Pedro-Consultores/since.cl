@@ -1,0 +1,31 @@
+{
+    "valores": {
+        "archivo3": "",
+        "rbd": "10126",
+        "archivo2": "",
+        "archivo1": "\/ciclo_4\/10126.pdf",
+        "archivo4": ""
+    },
+    "campos": [
+        {
+            "funcion": "",
+            "campo": "rbd"
+        },
+        {
+            "funcion": "",
+            "campo": "archivo1"
+        },
+        {
+            "funcion": "",
+            "campo": "archivo2"
+        },
+        {
+            "funcion": "",
+            "campo": "archivo3"
+        },
+        {
+            "funcion": "",
+            "campo": "archivo4"
+        }
+    ]
+}
