@@ -67,6 +67,3 @@ RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule .* - [L,QSA]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-
-# Tsubs
-RewriteRule ^([^/]+)/([^/]+)/?$ index.php?fecha=$1&rbd=$2 [L,QSA]
